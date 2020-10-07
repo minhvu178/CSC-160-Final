@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Interactive Dashboard</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="homepage">
+            <h3><a href="index.html">Home Page</a></h3>            
+        
+        </div>
+        
+        <div id="action">
+            <h3><a href="action-call.html">Call To Action</a></h3>            
+        
+        </div>
+        
+        
+        <div id="title">
+            <h3><a href="dashboard.html">Interactive Dashboard</a></h3>            
+        
+        </div>
+              
+        <div class="elec-major">
+            <svg id="elec-major"></svg>
+        </div>
+        
+        <div class="elec-renew">
+            <svg id="elec-renew"></svg>
+        </div>
+        
+        <div class="intro">
+            <p style="margin-left: 10">Hello! This is my Interactive Dashboard Page. Have fun messing around and exploring the datas with my graphs.
+            </p>
+            <p style="margin-left: 10">
+                These graphs mainly focus on energy development especially renewable energy. We will get to see its usage and its potential.
+            </p>
+        </div>
+        
+        <div class="us-potential">
+            <svg id="us-potential"></svg>
+        </div>
+        
+        <div class="avg-cost">
+            <svg id="avg-cost"></svg>
+        </div>
+        
+        <div class="solar-cost">
+            <svg id="solar-cost"></svg>
+        </div>
+        
+        <div class="hidden" id="tooltip">
+            <p id="potentialType" style="font-size: 12" style="font-family: Arial, Helvetica, sans-serif"></p>
+            <p id="solarCost" style="font-size: 12" style="font-family: Arial, Helvetica, sans-serif"></p>
+            <p id="avgCost" style="font-size: 12" style="font-family: Arial, Helvetica, sans-serif"></p>
+        </div>
+        
+        
+        
+        
+        
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="us-potential-renew.js"></script>
+        <script src="elec-renew.js"></script>
+        <script src="elec-major.js"></script>
+        <script src="solar-cost.js"></script>
+        <script src="avg-cost.js"></script>
+
+
+    </body>
+</html>
