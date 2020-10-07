@@ -39,7 +39,9 @@ var drawLine = function(solar, target_solar, xScale, yScale) {
         .on("mouseleave",function()
         {
             d3.select("#tooltip")    
-            .classed("hidden",true);
+            .classed("hidden",true)
+            .selectAll(".text")
+            .text(null)
         })
     
 }

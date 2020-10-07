@@ -44,7 +44,9 @@ var drawLines = function(dataReady, avg, target_avg, xScale, yScale, color) {
         .on("mouseleave",function()
         {
             d3.select("#tooltip")    
-            .classed("hidden",true);
+            .classed("hidden",true)
+            .selectAll(".text")
+            .text(null)
         })
       
     

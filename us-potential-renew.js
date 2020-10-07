@@ -16,9 +16,6 @@ var drawBarPotential = function(potential, potentColumns, potentStack, target_po
         d3.select("#potentialType")
             .text(subgroupName +"(GWh): " + subgroupValue)
         
-//        d3.select("#potentialValue")
-//            .text(subgroupValue)
-        
         d3.selectAll(".myRect").style("opacity", 0.1)
         d3.selectAll("."+subgroupName)
             .style("opacity", 1)
@@ -26,7 +23,9 @@ var drawBarPotential = function(potential, potentColumns, potentStack, target_po
 
     var mouseleave = function(d) {
         d3.select("#tooltip")    
-        .classed("hidden",true);
+        .classed("hidden",true)
+        .selectAll(".text")
+        .text(null)
         
         d3.selectAll(".myRect")
             .style("opacity",0.8)
