@@ -20,6 +20,9 @@
 body{
     background-color: #fbfbfb
 }
+#action-body{
+    background-image: url("renew-bg2.jpeg")
+}
 
 div{
     
@@ -92,6 +95,12 @@ svg{
     height: 35px;
     align-content: center;
     padding-left: 40%
+}
+#core-fact{
+    width:807px;
+    height:30px;
+    float:left;
+    
 }
 #action{
     width: 300px;
